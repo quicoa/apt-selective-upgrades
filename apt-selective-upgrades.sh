@@ -8,4 +8,4 @@ eval ${EDITOR} ${list}
 
 packages=$(cat ${list} | sed -E 's/\n/ /g')
 
-sudo apt install --only-upgrade ${packages}
+sudo apt install --only-upgrade $@ ${packages}
