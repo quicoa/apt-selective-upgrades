@@ -1,6 +1,7 @@
 #!/bin/bash
 
-list=/tmp/apt-upgradable.txt
+DIRNAME="$(dirname ${0})"
+list="$(cat ${DIRNAME}/file)"
 
 packages=$(cat ${list} | sed -E 's/\n/ /g')
 
