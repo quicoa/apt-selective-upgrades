@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 DIRNAME="$(dirname ${0})"
 list="$(cat ${DIRNAME}/file)"
 
