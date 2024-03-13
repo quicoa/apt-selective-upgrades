@@ -23,6 +23,7 @@ To select packages, but only download them, use
 To install previously selected and downloaded packages, use
 `apt-selective-upgrades-install-only.sh`
 
+> [!NOTE]
 > Please note: environment variable `EDITOR` is used to open you favorite
 > editor.  Make sure this variable is set properly, otherwise it may not open
 > your editor of choice.
