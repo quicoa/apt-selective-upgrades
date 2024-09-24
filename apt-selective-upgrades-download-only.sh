@@ -2,7 +2,7 @@
 
 set -e
 
-DIRNAME="$(realpath ${1})"
+DIRNAME="$(dirname $(realpath ${0}))"
 list="$(cat ${DIRNAME}/file)"
 
 apt list --upgradable | tail -n+2 | sed -E 's/^(.*)\/.+ .+ .+ \[.+\]$/\1/g' > ${list}

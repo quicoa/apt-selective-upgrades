@@ -2,7 +2,7 @@
 
 set -e
 
-DIRNAME="$(dirname ${0})"
+DIRNAME="$(dirname $(realpath ${0}))"
 list="$(cat ${DIRNAME}/file)"
 
 packages=$(cat ${list} | sed -E 's/\n/ /g')
